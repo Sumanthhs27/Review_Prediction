@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <div >
+        <h1 id = "box"  font-size: 5em > Restrauant Review Prediction </h1>
+            <h3 >Your Review</h3>
+            <form id = first action="{{ url_for('predict')}}" method="post">
+                <input name = "text">
+                <input type="submit">         
+            </form>
+            <br><br><h3>{{ prediction_text }}<h3>
+        </div>
+
+    <style>
+        body {
+            background-image: url("https://wallpaperaccess.com/full/3692584.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            text-align: center;
+            padding: 10% 0px 5%;
+        }
+      
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #box {
+            font-family: 'Explora';
+            color: #020000;
+        }
+
+    </style>
+</body>
+
+</html>
+
+
+
+
